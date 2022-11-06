@@ -1,6 +1,6 @@
 public class Ejercicio22 {
     public static void main (String[]args){
-        System.out.println ("Este programa te muestra los numero primos que hay entre 2 y 100: ");
+        System.out.println ("Este programa te muestra los numeros primos que hay entre 2 y 100: ");
         boolean primo = true;
         for (int n = 2; n <= 100; n++){
             primo = true;
