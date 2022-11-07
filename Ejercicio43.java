@@ -1,6 +1,6 @@
 public class Ejercicio43 {
     public static void main(String[] args) {
-        System.out.print("Por favor, introduzca un número entero positivo: ");
+        System.out.print("Introduzca un número entero positivo: ");
         long numeroIntroducido = Long.parseLong(System.console().readLine());
         System.out.print("Introduzca la posición a partir de la cual quiere partir el número: ");
         long posicion = Long.parseLong(System.console().readLine());
