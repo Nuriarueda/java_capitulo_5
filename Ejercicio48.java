@@ -20,7 +20,7 @@ public class Ejercicio48 {
                 System.out.print(i + " ");
             }
         }
-        System.out.print("\nDígitos que no aparecen: ");
+        System.out.print("Dígitos que no aparecen: ");
         for (int i = 0; i < 10; i++) {
             encontrado = false;
             aux = numero;
