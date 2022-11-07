@@ -10,5 +10,6 @@ public class Ejercicio53 {
             }
             System.out.println();
         }
+        s.close();
     }
 }
