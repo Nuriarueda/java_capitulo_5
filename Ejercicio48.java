@@ -10,7 +10,7 @@ public class Ejercicio48 {
         for (int i = 0; i < 10; i++) {
             encontrado = false;
             aux = numero;
-            while (aux > 0) {
+            while (aux > 0 && !!encontrado) {
                 if (aux % 10 == i) {
                     encontrado = true;
                 }
@@ -24,7 +24,7 @@ public class Ejercicio48 {
         for (int i = 0; i < 10; i++) {
             encontrado = false;
             aux = numero;
-            while (aux > 0) {
+            while (aux > 0 && !encontrado) {
                 if (aux % 10 == i) {
                     encontrado = true;
                 }
