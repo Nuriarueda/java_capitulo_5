@@ -16,5 +16,6 @@ public class Ejercicio54 {
             System.out.println("*");
         }
         System.out.println("*");
-        s.close();    }
+        s.close();    
+    }
 }
