@@ -1,55 +1,70 @@
 import java.util.Scanner;
+
 public class Ejercicio63 {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Introduzca la altura de la primera pirámide: ");
-        int alturaP1 = Integer.parseInt(s.nextLine());
-        System.out.print("Introduzca la altura de la segunda pirámide: ");
-        int alturaP2 = Integer.parseInt(s.nextLine());
-        int alturaMaxima = Math.max(alturaP1, alturaP2);
-        int espaciosP1 = alturaP1 - 1;
-        int espaciosP2 = alturaP2 - 1;
-        int baseP1 = alturaP1 * 2 - 1;
-        int baseP2 = alturaP2 * 2 - 1;
-        int asteriscosP1 = 1;
-        int asteriscosP2 = 1;
-        for (int i = alturaMaxima; i > 0; i--) {
-            if (i > alturaP1) {
-                for (int j = 0; j <= baseP1; j++) {
-                    System.out.print(" ");
-                }
-            } else {
-            for (int j = 0; j < espaciosP1; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < asteriscosP1; j++) {
-                System.out.print("*");
-            }
-            for (int j = 0; j <= espaciosP1; j++) {
-                System.out.print(" ");
-            }
-            espaciosP1--;
-            asteriscosP1 += 2;
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Introduzca la altura de la primera pirámide: ");
+    int height1 = sc.nextInt();
+
+    System.out.print("Introduzca la altura de la segunda pirámide: ");
+    int height2 = sc.nextInt();
+
+    int maxheight = Math.max(height1, height2);
+    int space1 = height1 - 1;
+    int space2 = height2 - 1;
+    int base1 = height1 * 2 - 1;
+    int base2 = height2 * 2 - 1;
+    int write1 = 1;
+    int write2 = 1;
+
+    for (int i = maxheight; i > 0; i--) {
+      
+      if (i > height1) {
+        for (int j = 0; j <= base1; j++) {
+          System.out.print(" ");
         }
-        if (i > alturaP2) {
-            for (int j = 0; j < baseP2; j++) {
-                System.out.print(" ");
-            }
-        } else {
-            for (int j = 0; j < espaciosP2; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < asteriscosP2; j++) {
-                System.out.print("*");
-            }
-            for (int j = 0; j <= espaciosP1; j++) {
-                System.out.print(" ");
-            }
-            espaciosP2--;
-            asteriscosP2 += 2;
+      } else {
+        for (int j = 0; j < space1; j++) {
+          System.out.print(" ");
         }
-        System.out.println();
-        s.close();
+
+        for (int j = 0; j < write1; j++) {
+          System.out.print("*");
+        }
+
+        for (int j = 0; j <= space1; j++) {
+          System.out.print(" ");
+        }
+
+        space1--;
+        write1 += 2;
+      }
+      
+      if (i > height2) {
+        for (int j = 0; j < base2; j++) {
+          System.out.print(" ");
+        }
+      } else {
+
+        for (int j = 0; j < space2; j++) {
+          System.out.print(" ");
+        }
+
+        for (int j = 0; j < write2; j++) {
+          System.out.print("*");
+        }
+
+        for (int j = 0; j <= space2; j++) {
+          System.out.print(" ");
+        }
+
+        space2--;
+        write2 += 2;
+      }
+      System.out.println();
     }
-}
+    sc.close();
+  }    
 }

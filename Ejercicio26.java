@@ -7,15 +7,12 @@ public class Ejercicio26 {
         System.out.print("Contando de izquierda a derecha, el " + digito + " aparece dentro de " + numeroIntroducido + " en las siguientes posiciones: ");
         int numero = numeroIntroducido;
         int volteado = 0;
-        int longitu = 0;
         int posicion = 1;
         if (numero == 0) {
-            longitu = 1;
         }
         while (numero > 0) {
             volteado = (volteado * 10) + (numero % 10);
             numero /= 10;
-            longitu++;
         } 
         while (volteado > 0) {
             if ((volteado % 10) == digito) {

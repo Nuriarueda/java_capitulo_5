@@ -6,8 +6,6 @@ public class Ejercicio29 {
         int numeroPequeno = Integer.parseInt(System.console().readLine());
         System.out.print("Los números enteros positivos menores que " + numeroGrande );
         System.out.println(" que no son divisibles entre " + numeroPequeno + " son los siguientes:");
-        int cuenta = 0;
-        int suma = 0;
         for (int i = 1; i < numeroGrande; i++) {
             if ((i % numeroPequeno) != 0) {
                 System.out.print(i + " ");
