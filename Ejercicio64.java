@@ -1,10 +1,12 @@
 import java.util.Scanner;
 public class Ejercicio64 {
     public static void main(String[] args) {
+        
         int ancho = 6;
         int alto = 3;
         Scanner s = new Scanner(System.in);
         int opcion = 0;
+
         do {
             for (int i = 0; i < ancho; i++) {
                 System.out.print("*");
