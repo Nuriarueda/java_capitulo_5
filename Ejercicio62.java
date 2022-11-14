@@ -5,8 +5,10 @@ public class Ejercicio62 {
         System.out.print("Introduzca un número: ");
         long numeroIntroducido = Long.parseLong(s.nextLine());
         long copia = numeroIntroducido;
+
         int afortunados = 0;
         int noAfortunados = 0;
+
         while (numeroIntroducido > 0) {
             int digito = (int)(numeroIntroducido % 10);
             if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9)) {
@@ -16,6 +18,7 @@ public class Ejercicio62 {
             }
             numeroIntroducido /= 10;
         }
+        
         if (afortunados > noAfortunados) {
             System.out.println("El " + copia + " es un número afortunado.");
         } else {
